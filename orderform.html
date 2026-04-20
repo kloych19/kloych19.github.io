@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>The Focus Blend</title>
+</head>
+
+<body>
+    <!--header with nav-->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="locations.html">LOCATIONS</a></li>
+                <li><a href="orderform.html">ORDER FORM</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form action="thankyou.html">
+    
+        <!--Start of customer information -->
+    <div id="customer">
+        <h1>Customer Information</h1>
+    </div>
+        <table> 
+            <tr> 
+                <td><label>First Name</label></td>
+                <td><input type="text" placeholder="First Name"></td>
+            </tr>
+            <tr> 
+                <td><label>Last Name</label></td>
+                <td><input type="text" placeholder="Last Name"></td>
+            </tr>
+            <tr>
+                <td><label>Phone Number</label></td>
+                <td><input type="text" placeholder="Phone Number"></td>
+            </tr>
+        </table>
+
+        <!--end of table for customer info -->
+
+    <div id="size">
+        <h1>Drink Size</h1>
+        <input type="radio" name="Drink Size" id="small">
+        <label>Small (12 ounce)</label>
+        <br/>
+        <input type="radio" name="Drink Size" id="medium">
+        <label>Medium (14 ounce)</label>
+        <br/>
+        <input type="radio" name="Drink Size" id="large">
+        <label>Large (16 ounce)</label>
+        <br/>
+    </div>
+
+<h1>Coffee</h1>
+
+<button type="button" onclick="showTemp('americanoBubble')">Americano</button>
+<div id="americanoBubble" class="tempBubble" style="display:none;">
+  <label><input type="radio" name="americanoTemp" value="hot"> Hot</label><br>
+  <label><input type="radio" name="americanoTemp" value="iced"> Iced</label>
+</div>
+<br>
+
+<button type="button" onclick="showTemp('latteBubble')">Latte</button>
+<div id="latteBubble" class="tempBubble" style="display:none;">
+  <label><input type="radio" name="latteTemp" value="hot"> Hot</label><br>
+  <label><input type="radio" name="latteTemp" value="iced"> Iced</label>
+</div>
+<br>
+
+<button type="button" onclick="showTemp('mochaBubble')">Mocha</button>
+<div id="mochaBubble" class="tempBubble" style="display:none;">
+  <label><input type="radio" name="mochaTemp" value="hot"> Hot</label><br>
+  <label><input type="radio" name="mochaTemp" value="iced"> Iced</label>
+</div>
+<br>
+
+<button type="button" onclick="showTemp('macchiatoBubble')">Macchiato</button>
+<div id="macchiatoBubble" class="tempBubble" style="display:none;">
+  <label><input type="radio" name="macchiatoTemp" value="hot"> Hot</label><br>
+  <label><input type="radio" name="macchiatoTemp" value="iced"> Iced</label>
+</div>
+<br>
+
+<button type="button" onclick="showTemp('cappuccinoBubble')">Cappuccino</button>
+<div id="cappuccinoBubble" class="tempBubble" style="display:none;">
+  <label><input type="radio" name="cappuccinoTemp" value="hot"> Hot</label>
+</div>
+<br>
+
+<button type="button" onclick="showTemp('brewedCoffeeBubble')">Brewed Coffee</button>
+<div id="brewedCoffeeBubble" class="tempBubble" style="display:none;">
+  <label><input type="radio" name="brewedCoffeeTemp" value="hot"> Hot</label>
+</div>
+<br>
+
+<button type="button" onclick="showTemp('coldBrewBubble')">Cold Brew</button>
+<div id="coldBrewBubble" class="tempBubble" style="display:none;">
+  <label><input type="radio" name="coldBrewTemp" value="iced"> Iced</label>
+</div>
+<br>
+
+<button type="button" onclick="showTemp('icedCoffeeBubble')">Iced Coffee</button>
+<div id="icedCoffeeBubble" class="tempBubble" style="display:none;">
+  <label><input type="radio" name="icedCoffeeTemp" value="iced"> Iced</label>
+</div>
+<br>
+
+<button type="button" onclick="showTemp('shakenEspressoBubble')">Shaken Espresso</button>
+<div id="shakenEspressoBubble" class="tempBubble" style="display:none;">
+  <label><input type="radio" name="shakenEspressoTemp" value="iced"> Iced</label>
+</div>
+<br>
+
+<button type="button" onclick="showTemp('frappuccinoBubble')">Frappucino</button>
+<div id="frappuccinoBubble" class="tempBubble" style="display:none;">
+  <label><input type="radio" name="frappucinoTemp" value="iced"> Iced</label>
+</div>
+<br>
+
+<h1>Tea</h1>
+
+    <button type="button" onclick="showTemp('herbalBubble')">Herbal Tea</button>
+    <div id="herbalBubble" class="tempBubble" style="display:none;">
+        <label><input type="radio" name="herbalTemp" value="hot"> Hot</label><br>
+    <label><input type="radio" name="herbalTemp" value="iced"> Iced</label>
+    </div>
+    <br>
+
+    <button type="button" onclick="showTemp('blackBubble')">Black Tea</button>
+    <div id="blackBubble" class="tempBubble" style="display:none;">
+        <label><input type="radio" name="blackTemp" value="hot"> Hot</label><br>
+    <label><input type="radio" name="blackTemp" value="iced"> Iced</label>
+    </div>
+    <br>
+
+    <button type="button" onclick="showTemp('greenBubble')">Green Tea</button>
+    <div id="greenBubble" class="tempBubble" style="display:none;">
+        <label><input type="radio" name="greenTemp" value="hot"> Hot</label><br>
+    <label><input type="radio" name="greenTemp" value="iced"> Iced</label>
+    </div>
+    <br>
+
+    <button type="button" onclick="showTemp('matchaBubble')">Matcha Tea</button>
+    <div id="matchaBubble" class="tempBubble" style="display:none;">
+        <label><input type="radio" name="matchaTemp" value="hot"> Hot</label><br>
+    <label><input type="radio" name="matchaTemp" value="iced"> Iced</label>
+    </div>
+    <br>
+
+    <button type="button" onclick="showTemp('chaiBubble')">Chai Tea</button>
+    <div id="chaiBubble" class="tempBubble" style="display:none;">
+        <label><input type="radio" name="chaiTemp" value="hot"> Hot</label><br>
+    <label><input type="radio" name="chaiTemp" value="iced"> Iced</label>
+    </div>
+    <br>
+
+    <button type="button" onclick="showTemp('milkBubble')">Milk Tea</button>
+    <div id="milkBubble" class="tempBubble" style="display:none;">
+        <label><input type="radio" name="milkTemp" value="iced"> Iced</label>
+    </div>
+    <br>
+
+
+<h1>Refreshers</h1>
+
+    <button type="button" onclick="showTemp('strawberryBubble')">Strawberry Peach</button>
+    <div id="strawberryBubble" class="tempBubble" style="display:none;">
+        <label><input type="radio" name="strawberryTemp" value="iced"> Iced</label>
+    </div>
+    <br>
+
+    <button type="button" onclick="showTemp('mangoBubble')">Mango Peach</button>
+    <div id="mangoBubble" class="tempBubble" style="display:none;">
+        <label><input type="radio" name="mangoTemp" value="iced"> Iced</label>
+    </div>
+    <br>
+
+    <button type="button" onclick="showTemp('berryBubble')">Berry Blast</button>
+    <div id="berryBubble" class="tempBubble" style="display:none;">
+        <label><input type="radio" name="berryTemp" value="iced"> Iced</label>
+    </div>
+    <br>
+
+
+<h1>Other Beverages</h1>
+
+    <button type="button" onclick="showTemp('chocolateBubble')">Hot Chocolate</button>
+    <div id="chocolateBubble" class="tempBubble" style="display:none;">
+        <label><input type="radio" name="chocolateTemp" value="hot"> Hot</label>
+    </div>
+    <br>
+
+    <button type="button" onclick="showTemp('lemonadeBubble')">Lemonade</button>
+    <div id="lemonadeBubble" class="tempBubble" style="display:none;">
+        <label><input type="radio" name="lemonadeTemp" value="iced"> Iced</label>
+    </div>
+    <br>
+
+    <button type="button" onclick="showTemp('smoothieBubble')">Tropical Smoothie</button>
+    <div id="smoothieBubble" class="tempBubble" style="display:none;">
+        <label><input type="radio" name="smoothieTemp" value="iced"> Iced</label>
+    </div>
+    <br>
+
+        
+    <div id="modifications">
+        <h1>Modifications</h1>
+        <Input type="checkbox" id="extraice">
+        <label>Extra Ice</label>
+        <br/>
+        <Input type="checkbox" id="lightice">
+        <label>Light Ice</label>
+        <br/>
+        <Input type="checkbox" id="noice">
+        <label>No Ice</label>
+        <br/>
+        <Input type="checkbox" id="poppingbubbles">
+        <label>Popping Bubbles</label>
+        <br/>
+        <Input type="checkbox" id="tapiocabubbles">
+        <label>Tapioca Bubbles</label>
+        <br/>
+        <Input type="checkbox" id="shotofespresso">
+        <label>Shot of Espresso</label>
+        <br/>
+    </div>
+
+    <div id="milk">
+        <h1>Milk Options</h1>
+        <Input type="checkbox" id="twopercent">
+        <label>2%</label>
+        <br/>
+        <Input type="checkbox" id="nonfat">
+        <label>Non-Fat</label>
+        <br/>
+        <Input type="checkbox" id="Whole">
+        <label>Whole</label>
+        <br/>
+        <Input type="checkbox" id="almond">
+        <label>Almond</label>
+        <br/>
+        <Input type="checkbox" id="oat">
+        <label>Oat</label>
+        <br/>
+        <Input type="checkbox" id="soy">
+        <label>Soy</label>
+        <br/>
+        <Input type="checkbox" id="coconut">
+        <label>Coconut</label>
+        <br/>
+    </div>
+
+        <br/>
+        <br/>
+        <textarea row="4" cols="40" placeholder="Enter any special instructions!"></textarea>
+        <br/>
+        <br/>
+        <button type="submit">Submit</button>
+        <br/>
+        <br/>
+        <button type="reset">Reset</button>
+    </div>
+    
+    </form>
+    <script src="JS/script.js" defer></script>
+</body>
+</html>
