@@ -3,9 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank you!</title>
+    <title>THANK YOU</title>
+    <link rel="icon" type="image/x-icon" href="media/images/favicon_io/favicon.ico">
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
-    <h1>Thank you for your order!</h1>
+    <!--Header with Nav-->
+    <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="orderform.html">ORDER FORM</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    <!--Thank You Message and Input-->
+
+    <div class="thankyou">
+        <h1>Thank you for your order!</h1>
+        <h2>Let Us Know Your Thoughts! <br>What is a drink you want to see on our menu?</h2>
+        <br>
+            <div class="input-row">
+                <input type="text" id="drinkInput" placeholder="Drink Idea">
+                <button onclick="submitDrink()">Submit</button>
+            </div>
+            <p id="drinkResult"></p>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div id="col1">
+            <h3>Contact Us At...</h3>
+            <p>814-123-4567<br><br>thefocusblend@gmail.com</p>
+        </div>
+
+        <div id="col2">
+            <h3>Follow Us Below!</h3>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="media/images/instagram.png" alt="Company's Instagram Link" width="40" height="40">
+            </a>
+            <a href="https://www.tiktok.com/" target="_blank">
+                <img src="media/images/tiktok.png" alt="Company's TikTok Link" width="40" height="40">
+            </a>
+        </div>
+
+        <div id="col3">
+            <h3>Location</h3>
+            <a href="https://maps.app.goo.gl/XMHgGJdw2XfZErF38" target="_blank" class="location-link">730 Washington Street<br>Huntingdon, PA 16652</a>
+        </div>
+
+        <div id="col4">
+            <h3>Business Hours</h3>
+            <p>Every Day 12:00 AM - 12:00 PM</p>
+        </div>
+
+        <div class="email-signup">
+            <h3>For More Rewards...</h3>
+            <input type="email" id="emailInput" placeholder="Enter your email">
+            <button onclick="signup()">Sign Up</button>
+            <p id="signupMessage"></p>
+        </div>
+    </footer>
+
+     <script src="js/script.js"></script>
+
 </body>
 </html>
+

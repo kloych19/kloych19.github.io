@@ -7,25 +7,86 @@
     <link rel="icon" type="image/x-icon" href="media/images/favicon_io/favicon.ico">
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
-<body>
-    <!--header with nav-->
+<body class="about">   
+    
+    <!--Header with Nav-->
     <header>
         <nav>
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
-                <li><a href="locations.html">LOCATIONS</a></li>
+                <li><a href="events.html">EVENTS</a></li>
                 <li><a href="orderform.html">ORDER FORM</a></li>
             </ul>
         </nav>
     </header>
     
-    <div class="white-box">
-        <h2>Welcome to The Focus Blend!</h2>
-        <p><b>The Focus Blend </b>first opened it's doors in April of 2026 with a mission in mind. Not only do we consider ourselves a coffee shop;<br>
-            we also strive to be a unique space for students and adults alike to focus. In order to accommodate different types of work styles, we are open 24 hours<br>
-            and offer a variety of themed study sessions on a weekly basis. Whether you're here for mocha or math, welcome to The Focus Blend!</p>
-    </div>
+    <div class="bg-strip"></div>
 
+    <!--Mission-->
+    <div class="stack-box">
+        <div class="about-box">
+            <h1>Welcome to The Focus Blend!</h1>
+            <p><b>The Focus Blend</b> first opened it's doors in April of 2026 with a mission in mind. Not only do we consider ourselves a coffee shop;
+            we also strive to be a unique space for students and adults alike to focus. In order to accommodate different types of work styles, we are open 24 hours
+            and offer a variety of themed study sessions on a weekly basis. Whether you're here for mocha or math, welcome to The Focus Blend!</p>
+        </div>
+    
+    <!--Background-->
+        <div class="left-right">
+            <img src="media/images/pretty-smiling-girl-black-apron-striped-t-shirt-holding-handmade-plate-bowl-hands-happily-looking-camera-pottery-studio.jpg" alt="Description" class="side-pic">
+
+            <div class="text-side">
+                <h2>How We Came to Be</h2>
+                <p>The Focus Blend was founded by Dr. Cheyanne Lynn, an associate professor of business and culinary arts at Juniata College. 
+                    While teaching, she saw a need for a study location that was easily accessible to students of all learning styles, available at all times, and provided some distance from the college itself. 
+                    Thus, an idea was born!</p>
+            </div>
+        </div>
+
+    <!--Review-->
+        <div class="about-box">
+            <h2 class="fade-in">The Focus Blend perfectly pairs relaxation and comfort with productivity. 
+            The Pretzel Caramel Latte doesn't hurt either!</h2>
+            <p class="fade-in">- Julia W, Juniata College Student</p>
+        </div>
+    </div>
+    
+    <!--Footer-->
+    <footer>
+        <div id="col1">
+            <h3>Contact Us At...</h3>
+            <p>814-123-4567<br><br>thefocusblend@gmail.com</p>
+        </div>
+
+        <div id="col2">
+            <h3>Follow Us Below!</h3>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="media/images/instagram.png" alt="Company's Instagram Link" width="40" height="40">
+            </a>
+            <a href="https://www.tiktok.com/" target="_blank">
+                <img src="media/images/tiktok.png" alt="Company's TikTok Link" width="40" height="40">
+            </a>
+        </div>
+
+        <div id="col3">
+            <h3>Location</h3>
+            <a href="https://maps.app.goo.gl/XMHgGJdw2XfZErF38" target="_blank" class="location-link">730 Washington Street<br>Huntingdon, PA 16652</a>
+        </div>
+
+        <div id="col4">
+            <h3>Business Hours</h3>
+            <p>Every Day 12:00 AM - 12:00 PM</p>
+        </div>
+
+        <div class="email-signup">
+            <h3>For More Rewards...</h3>
+            <input type="email" id="emailInput" placeholder="Enter your email">
+            <button onclick="signup()">Sign Up</button>
+            <p id="signupMessage"></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
